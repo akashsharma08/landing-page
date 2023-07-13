@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Books</title>
+
+    <!--ICONSCOUT cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--GOOGLE fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>    
+    <nav id="nav-bar">
+        <div class="container nav__container">
+            <ul class="nav__menu">
+                <li><a href="index.html">FEATURES</a></li>
+                <li><a href="about.html">FREE AUDIO BOOK</a></li>
+                <li><a href="courses.html">FOR SALE</a></li>                
+            </ul>            
+            <a href="index.html"><span id="spn">CLASSIC BOOKS</span></a>
+            <a href="index.html"><img id ="logo" src="\images\book_logo.png" alt="books" ></a>
+        </div>
+    </nav>    
+
+<!--         END  of NAVBAR        -->
+<!--              HEADER           -->
+
+    <header>                    
+            <h1 id="h1hover">BEAUTIFULLY WRITTEN MASTERPIECES</h1>
+            <form action="https://www.freecodecamp.com/email-submit" id="mail">
+                <input type="text" placeholder="Enter you Email address" required name="email" id="mail_input">
+                <input type="submit" id="submitbtn" value="GET STARTED">
+            </form>    
+    </header>
+    <!--      END of HEADER       -->
+
+    <section id="features">
+        
+            <div class="category">
+                <i class="ri-file-paper-2-line ri-4x icon"></i>
+                <div >
+                    <h2>Premium Mateial</h2>
+                    <p>Our books uses paper which is sourced locally.This will increase the longetivity of your product</p>
+                </div>
+            </div>
+            <div class="category">
+                <i class="ri-truck-fill ri-4x icon"></i>
+                <div>
+                    <h2>One day shipping</h2>
+                    <p>We make sure that you recieve your classic book as soon as possible so hat you can start reading immediately. We also provide free returns if  you are not satisfied.</p>
+                </div>
+            </div>
+            <div class="category">
+                <i class="ri-book-open-line ri-4x icon"></i>
+                <div>
+                    <h2>Quality books only</h2>
+                    <p>We make sure to only provide awsome classic books.We gaurantee that the book  you buy is of the top classic books on the Internet. </p>
+                </div>
+            </div>           
+                 
+    </section>
+    <section id="audio">
+        <iframe
+            id="video"
+            width="100%" 
+            height="800px"
+            src="https://www.youtube.com/embed/InSgoaDOSw4" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen
+        ></iframe>
+    </section>
+    <section id="for_sale">
+        <h2>For Sale</h2>
+        <div id="product-cards">
+            <div class="card">
+                <div class="product-image product1"></div>
+                <div class="inner-card">
+                    <div class="author"><a href="https://en.wikipedia.org/wiki/Dale_Carnegie">Dale Carnegie</a></div>
+                    <h1 class="header">How to win friends and influence people.</h1>
+                    <p class="content">Dale Carnegie's rock-solid, timr tested advice has carried countless people up the ladder in thier business and person lives.</p>
+                    <div class="flex">
+                        <div class="main-price">$16.12</div>
+                        <div class="old-price">$19.12</div>                        
+                    </div>
+                    <button class="add">Add to Cart</button>
+                </div>
+            </div>            
+        </div>
+        <div id="product-cards">
+            <div class="card">
+                <div class="product-image product2"></div>
+                <div class="inner-card">
+                    <div class="author"><a href="https://en.wikipedia.org/wiki/Robert_Kiyosaki">Robert T. Kiyosaki</a></div>
+                    <h1 class="header">Rich Dad Poor Dad</h1>
+                    <p class="content">Rich Dad Poor Dad is a 1997 book written by Robert T. Kiyosaki and Sharon Lechter. It advocates the importance of financial literacy (financial education), financial independence and building wealth through investing in assets, real estate investing, starting and owning businesses, as well as increasing one's financial intelligence (financial IQ)</p>
+                    <div class="flex">
+                        <div class="main-price">$21.11</div>
+                        <div class="old-price">$25.14</div>                        
+                    </div>
+                    <button class="add">Add to Cart</button>
+                </div>
+            </div>            
+        </div>
+        <div id="product-cards">
+            <div class="card">
+                <div class="product-image product3"></div>
+                <div class="inner-card">
+                    <div class="author"><a href="https://en.wikipedia.org/wiki/James_Clear">James Clear</a></div>
+                    <h1 class="header">Tiny changes remarkable results</h1>
+                    <p class="content">This breakthrough book from James Clear is the most comprehensive guide on how to change your habits and get 1% better every day</p>
+                    <div class="flex">
+                        <div class="main-price">$11.54</div>
+                        <div class="old-price">$14.85</div>                        
+                    </div>
+                    <button class="add">Add to Cart</button>
+                </div>
+            </div>            
+        </div>
+    </section>
+
+
+
+</body>
+</html>

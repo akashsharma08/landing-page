@@ -1,0 +1,270 @@
+*{
+    margin:0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary: #6c63ff ;
+    --color-success: #6c63ff ;
+    --color-warning: #f7c983 ;
+    --color-danger: #f75842 ;
+    --color-danger-varient: rgba(247,88,66,0.4) ;
+    --color-white: #fff ;
+    --color-light: rgba(255,255,255,0.7) ;
+    --color-black: #000 ;
+    --color-bg: #1f2641 ;
+    --color-bg1: #2e3267 ;
+    --color-bg2: #424890 ;
+
+    --container-width-lg: 76% ;
+    --container-width-md: 90% ;
+    --container-width-sm: 94% ;
+
+    --transition: all 200ms ease;
+}
+
+body{
+    font-family: "Montserrat Alternates" ;
+    line-height: 1.7 ;
+    color: var(--color-white);
+    background: var(--color-bg2);
+
+}
+
+.container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+#logo{
+    width: 80px;
+    height: 80px;
+    padding-top: 2px;
+}
+
+h1,h2,h3,h4,h5{
+    line-height: 1.2 ;
+}
+
+h1{
+    font-size: 2.8rem ;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow:  3px 3px 15px #000000;
+    
+    
+}
+
+h2{
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h3{
+    font-size: 1.6rem;
+}
+h4{
+    font-size: 1.3rem;
+}
+
+a{
+    color: var(--color-white);
+}
+/*-------------NAVBAR--------------*/
+nav{
+    background: var(--color-bg1);
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+}
+
+.nav__container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#spn{
+    padding-left: 22rem;
+    font-size: 2rem; 
+    font-family:Montserrat Alternates; 
+    font-weight:2px;
+}
+
+nav button{
+    display: none;
+
+}
+.nav__menu{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nav__menu a{
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.nav__menu a:hover{
+    color: var(--color-danger);
+}
+
+/*-------------HEADER--------------*/
+
+header{
+    position: relative;
+    top: 3rem;
+    overflow: hidden;
+    height: 10vw;
+    margin-bottom: 5rem;
+}
+#mail{
+    text-align: center;
+    
+}
+#mail_input{
+    height: 30px;
+    width: 15rem;
+    border:var(--color-bg);
+    border: 2px white solid;
+    
+    border-radius: 5px;
+    text-align: center;
+    size: 0ch;
+    
+    
+}
+#submitbtn{
+    border: 2px solid #f9f4f4;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    background-color: green;
+    color: #fff
+}
+#submitbtn:hover{
+    background-color: #18ab24;   
+}
+
+/*---------------features------------*/
+
+section{
+    margin: 40px 20px;
+    text-align: center;
+    
+}
+.icon:hover{
+    color: rgb(43, 156, 43);
+
+}
+.icon{
+    margin-right: 2rem;
+}
+#features{
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+.category{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    font-family: "Montserrat Alternates";
+}
+.card{
+    background-color:var(--color-bg1);
+    width: 66%;
+    margin:auto ;
+    display: flex;    
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;    
+}
+
+.product-image{
+    width: 500px;
+    margin: auto;
+    
+    height: 750px;
+    border: 1px solid gray;
+    border-radius: 10px 0 0 10px ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.product1{
+    background-image: url("https://4.bp.blogspot.com/-dhHMdgFqsWs/WmQTX69oFYI/AAAAAAAAB30/1uHOrgR0He4O4AUfDLH_RFRss3w3zjYHwCLcBGAs/s1600/How%2BTo%2BWin%2BFriends%2B%2526%2BInfluence%2BPeople%2B%2528The%2BOriginal%2B1936%2BEdition%2529%2Bbook.jpg");
+
+}
+.product2{
+    background-image: url("https://tkim.co/wp-content/uploads/2018/10/richdad-poordad.jpg");
+
+}
+.product3{
+    background-image: url("https://www.etienne.ninja/atomic-habits-tiny-changes-remarkable-results/cover.jpeg");
+
+}
+
+.inner-card{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    
+}
+.author{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(202, 180, 12);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    
+}
+.main-price{
+    margin-right: 20px;
+    color: #47d653;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+}
+.old-price{
+    text-decoration: line-through;
+    color: gray;
+    
+}
+.add{
+    background-color:var(--color-primary);
+    color: wheat;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    
+}
+.add:hover{
+    background-color: #564dfa;
+    box-shadow: 5px 5px 10px #000000;
+}
+
+#product-cards{
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
